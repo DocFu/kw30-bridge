@@ -1,6 +1,7 @@
 package de.plasmawolke.mqttbridge.hap;
 
 
+import de.plasmawolke.mqttbridge.BaseHomekitAccessory;
 import de.plasmawolke.mqttbridge.Version;
 import io.github.hapjava.server.impl.HomekitRoot;
 import io.github.hapjava.server.impl.HomekitServer;
@@ -15,11 +16,11 @@ public class HomekitService {
 
     private static final Logger logger = LoggerFactory.getLogger(HomekitService.class);
 
-    private static final File authFile = new File("qlcplus-bridge-auth.bin");
+    private static final File authFile = new File("mqtt-bridge-auth.bin");
 
 
-    private static final String manufacturer = "https://github.com/DocFu/qlcplus-bridge";
-    private static final String model = "QLC+ Bridge";
+    private static final String manufacturer = "https://github.com/DocFu/mqtt-bridge";
+    private static final String model = "MQTT Bridge";
     private static final String serialNumber = "1";
     private static final String firmwareRevision = Version.getVersionAndRevision();
     private static final String hardwareRevision = "-";
@@ -33,16 +34,16 @@ public class HomekitService {
     }
 
 
-    public void runWithAccessories() throws Exception {
+    public void runWithAccessories(BaseHomekitAccessory... accessories) throws Exception {
 
         HomekitServer homekitServer = new HomekitServer(port);
         AuthInfo authInfo = createAuthInfo();
         HomekitRoot bridge = homekitServer.createBridge(authInfo, model, manufacturer, model, serialNumber, firmwareRevision, hardwareRevision);
 
-//        for (VirtualConsoleButton vcb : buttons) {
-//            logger.info("Adding HomeKit Accessory: " + vcb);
-//            bridge.addAccessory(vcb);
-//        }
+        for (BaseHomekitAccessory accessory : accessories) {
+            logger.info("Adding HomeKit Accessory: " + accessory);
+            bridge.addAccessory(accessory);
+        }
 
         bridge.start();
 
