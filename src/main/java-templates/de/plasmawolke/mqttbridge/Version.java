@@ -1,4 +1,4 @@
-package de.plasmawolke.qlcplusbridge;
+package de.plasmawolke.mqttbridge;
 
 import org.apache.commons.lang3.StringUtils;
 

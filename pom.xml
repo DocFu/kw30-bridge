@@ -8,13 +8,13 @@
     <artifactId>mqtt-bridge</artifactId>
     <version>0.1.0</version>
 
-<!--
+
     <scm>
-        <developerConnection>scm:git:ssh://git@github.com/DocFu/qlcplus-bridge.git</developerConnection>
-        <connection>scm:git:https://github.com/DocFu/qlcplus-bridge.git</connection>
-        <url>https://github.com/DocFu/qlcplus-bridge</url>
+        <developerConnection>scm:git:ssh://git@github.com/DocFu/mqtt-bridge.git</developerConnection>
+        <connection>scm:git:https://github.com/DocFu/mqtt-bridge.git</connection>
+        <url>https://github.com/DocFu/mqtt-bridge</url>
     </scm>
--->
+
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

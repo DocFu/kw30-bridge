@@ -1,4 +1,4 @@
-package de.plasmawolke.qlcplusbridge;
+package de.plasmawolke.mqttbridge;
 
 import com.beust.jcommander.Parameter;
 

@@ -1,7 +1,7 @@
-package de.plasmawolke.qlcplusbridge;
+package de.plasmawolke.mqttbridge;
 
 import com.beust.jcommander.JCommander;
-import de.plasmawolke.qlcplusbridge.hap.HomekitService;
+import de.plasmawolke.mqttbridge.hap.HomekitService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

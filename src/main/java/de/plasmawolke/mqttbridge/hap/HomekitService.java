@@ -1,7 +1,7 @@
-package de.plasmawolke.qlcplusbridge.hap;
+package de.plasmawolke.mqttbridge.hap;
 
 
-import de.plasmawolke.qlcplusbridge.Version;
+import de.plasmawolke.mqttbridge.Version;
 import io.github.hapjava.server.impl.HomekitRoot;
 import io.github.hapjava.server.impl.HomekitServer;
 import org.apache.commons.lang3.StringUtils;

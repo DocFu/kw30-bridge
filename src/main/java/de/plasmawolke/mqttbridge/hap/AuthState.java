@@ -1,4 +1,4 @@
-package de.plasmawolke.qlcplusbridge.hap;
+package de.plasmawolke.mqttbridge.hap;
 
 import java.io.Serializable;
 import java.math.BigInteger;
