@@ -48,14 +48,14 @@ public class MovementSensor extends BaseHomekitAccessory implements MotionSensor
                 motionDetected = Boolean.TRUE;
                 lastCount = count;
                 changed();
-                resetCountDown = 3;
+                resetCountDown = 10;
                 logger.info("Motion detected!");
             }
 
-            if (motionDetected) {
-                resetCountDown--;
+            if (resetCountDown > 0) {
                 logger.info("Motion detection will be reset after " + resetCountDown + " messages.");
-                if (resetCountDown < 0) {
+                resetCountDown--;
+                if (resetCountDown == 0) {
                     motionDetected = Boolean.FALSE;
                     lastCount = count;
                     changed();
