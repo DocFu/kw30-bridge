@@ -1,8 +1,7 @@
-package de.plasmawolke.mqttbridge.hap;
+package de.plasmawolke.kw30bridge.hap;
 
 
-import de.plasmawolke.mqttbridge.BaseHomekitAccessory;
-import de.plasmawolke.mqttbridge.Version;
+import de.plasmawolke.kw30bridge.Version;
 import io.github.hapjava.server.impl.HomekitRoot;
 import io.github.hapjava.server.impl.HomekitServer;
 import org.apache.commons.lang3.StringUtils;
@@ -16,12 +15,12 @@ public class HomekitService {
 
     private static final Logger logger = LoggerFactory.getLogger(HomekitService.class);
 
-    private static final File authFile = new File("mqtt-bridge-auth.bin");
+    private static final File authFile = new File("kw30-bridge-auth.bin");
 
 
-    private static final String manufacturer = "https://github.com/DocFu/mqtt-bridge";
-    private static final String model = "MQTT Bridge";
-    private static final String serialNumber = "1";
+    private static final String manufacturer = "https://github.com/DocFu/kw30-bridge";
+    private static final String model = "KW30 Bridge";
+    private static final String serialNumber = "21";
     private static final String firmwareRevision = Version.getVersionAndRevision();
     private static final String hardwareRevision = "-";
 

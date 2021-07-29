@@ -1,4 +1,4 @@
-package de.plasmawolke.mqttbridge.hap;
+package de.plasmawolke.kw30bridge.hap;
 
 import io.github.hapjava.server.HomekitAuthInfo;
 import io.github.hapjava.server.impl.HomekitServer;

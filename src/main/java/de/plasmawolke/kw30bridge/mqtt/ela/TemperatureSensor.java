@@ -1,19 +1,16 @@
-package de.plasmawolke.mqttbridge;
+package de.plasmawolke.kw30bridge.mqtt.ela;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
+import de.plasmawolke.kw30bridge.hap.BaseHomekitAccessory;
 import io.github.hapjava.accessories.TemperatureSensorAccessory;
 import io.github.hapjava.characteristics.HomekitCharacteristicChangeCallback;
-import io.netty.handler.codec.json.JsonObjectDecoder;
 import org.eclipse.paho.client.mqttv3.IMqttMessageListener;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
-import org.glassfish.json.JsonParserImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.json.JsonArray;
-import javax.json.stream.JsonParser;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 

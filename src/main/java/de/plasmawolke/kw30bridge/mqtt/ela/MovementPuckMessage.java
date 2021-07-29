@@ -1,4 +1,4 @@
-package de.plasmawolke.mqttbridge;
+package de.plasmawolke.kw30bridge.mqtt.ela;
 
 public class MovementPuckMessage {
 

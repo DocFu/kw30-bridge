@@ -1,21 +1,23 @@
-package de.plasmawolke.mqttbridge;
+package de.plasmawolke.kw30bridge;
 
 import com.beust.jcommander.JCommander;
-import de.plasmawolke.mqttbridge.hap.HomekitService;
+import de.plasmawolke.kw30bridge.hap.HomekitService;
+import de.plasmawolke.kw30bridge.mqtt.ela.MovementSensor;
+import de.plasmawolke.kw30bridge.mqtt.ela.TemperatureSensor;
 import org.apache.commons.lang3.StringUtils;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MqttBridge {
+public class Kw30Bridge {
 
-    private static final Logger logger = LoggerFactory.getLogger(MqttBridge.class);
+    private static final Logger logger = LoggerFactory.getLogger(Kw30Bridge.class);
 
 
     public static void main(String[] args) {
 
-        logger.info("Running MQTT Bridge " + Version.getVersionAndRevision() + "...");
+        logger.info("Running KW30 Bridge " + Version.getVersionAndRevision() + "...");
 
         AppArguments appArguments = new AppArguments();
         JCommander commander = JCommander.newBuilder()

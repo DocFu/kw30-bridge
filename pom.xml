@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.plasmwolke</groupId>
-    <artifactId>mqtt-bridge</artifactId>
+    <artifactId>kw30-bridge</artifactId>
     <version>0.1.0</version>
 
 
     <scm>
-        <developerConnection>scm:git:ssh://git@github.com/DocFu/mqtt-bridge.git</developerConnection>
-        <connection>scm:git:https://github.com/DocFu/mqtt-bridge.git</connection>
-        <url>https://github.com/DocFu/mqtt-bridge</url>
+        <developerConnection>scm:git:ssh://git@github.com/DocFu/kw30-bridge.git</developerConnection>
+        <connection>scm:git:https://github.com/DocFu/kw30-bridge.git</connection>
+        <url>https://github.com/DocFu/kw30-bridge</url>
     </scm>
 
 
@@ -102,7 +102,7 @@
                 <version>3.1.1</version>
 
                 <configuration>
-                    <finalName>mqtt-bridge-app</finalName>
+                    <finalName>kw30-bridge-app</finalName>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
@@ -111,7 +111,7 @@
                     <!-- MainClass in mainfest make a executable jar -->
                     <archive>
                         <manifest>
-                            <mainClass>de.plasmawolke.mqttbridge.MqttBridge</mainClass>
+                            <mainClass>de.plasmawolke.kw30bridge.Kw30Bridge</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

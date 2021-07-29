@@ -1,4 +1,4 @@
-package de.plasmawolke.mqttbridge;
+package de.plasmawolke.kw30bridge.hap;
 
 import io.github.hapjava.accessories.HomekitAccessory;
 import io.github.hapjava.characteristics.HomekitCharacteristicChangeCallback;
@@ -18,7 +18,7 @@ public abstract class BaseHomekitAccessory implements HomekitAccessory {
 
     private String serialNumber = "1234-5678"; // TODO
     private String model = getClass().getSimpleName();
-    private String manufacturer = "MQTT Bridge";
+    private String manufacturer = "KW30 Bridge";
     private String firmwareRevision = "0.1"; // TODO
 
 
